@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo} from 'react';
+import React, {useCallback} from 'react';
 import { useGlobalCountries } from '../Utils/context';
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const SearchCountries = () => {
   
-  const {searchValue, setSearchValue, isDarkMode, continentArray, theRegion, setTheRegion} = useGlobalCountries();
+  const {searchValue, setSearchValue, isDarkMode, continentArray, setTheRegion} = useGlobalCountries();
 
   const vava = useCallback((e) => {
     setSearchValue(e.target.value);

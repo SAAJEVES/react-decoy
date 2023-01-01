@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useGlobalCountries } from '../Utils/context';
 import CountryInfo from '../Components/CountryInfo';
 import Loading from '../Components/Loading';

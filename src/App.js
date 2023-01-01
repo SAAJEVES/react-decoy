@@ -7,8 +7,7 @@ import { useGlobalCountries } from "./Utils/context";
 import './App.css';
 
 function App() {
-  const {countriesArray} = useGlobalCountries();
-  // console.log(countriesArray);
+  
   return (
     <React.Fragment>
       <Navbar />

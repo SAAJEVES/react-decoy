@@ -6,11 +6,9 @@ import {BsArrowLeft} from "react-icons/bs";
 
 const CountryInfo = (info) => {
   let {commonName,nativeName, population,flags, region, capital,subregion,currencies, languages, borders, tld} = info["0"];
-  // console.log(Object.keys(info));
+
   const currency = Object.keys(currencies)[0];
   const theLanguages = Object.values(languages);
-
-  const navigate = useNavigate()
   
   const {isDarkMode} = useGlobalCountries();
   return (
@@ -49,7 +47,7 @@ const CountryInfo = (info) => {
                     <span>
                       {
                         theLanguages.map((lan, index) => {
-                          if(index == theLanguages.length - 1) {
+                          if(index === theLanguages.length - 1) {
                             return <span key={index}>{lan}</span>
                           }
                           return <span key={index}>

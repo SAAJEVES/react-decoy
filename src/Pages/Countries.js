@@ -6,7 +6,7 @@ import Loading from '../Components/Loading';
 import Error from './Error';
 
 const Countries = () => {
-  const {isDarkMode, isLoading, isCountriesList, isSingleCountry, isErrorPage} = useGlobalCountries();
+  const {isDarkMode, isLoading, isCountriesList, isErrorPage} = useGlobalCountries();
   
   return (
     <main className={`countries ${isDarkMode && "darkmode"}`}>
