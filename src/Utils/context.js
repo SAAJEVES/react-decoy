@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, useCallback } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
 const CountriesContext = React.createContext();
 const url = `https://restcountries.com/v3.1/all`;
@@ -131,11 +131,11 @@ const CountriesProvider = ({children}) => {
     } else {
       fetchInputCountry(searchValue);
     }
-  }, [searchValue]);
+  }, [ searchValue ]);
 
   useEffect(()=> {
     fetchRegion(theRegion);
-  },[theRegion]);
+  },[ theRegion ]);
 
   return (
     <CountriesContext.Provider value={{countriesArray, isDarkMode,setIsDarkMode, isLoading, setIsLoading, searchValue, setSearchValue, continentArray, isCountriesList, setIsCountriesList,isSingleCountry, setIsSingleCountry, theRegion, setTheRegion, isErrorPage, setIsErrorPage}}>

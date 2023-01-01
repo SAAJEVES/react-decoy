@@ -40,7 +40,7 @@ const SingleCountry = () => {
   useEffect(() => {
     getSingleCountry();
 
-  }, [isLoading]);
+  }, [ isLoading ]);
 
   return (
     <React.Fragment>

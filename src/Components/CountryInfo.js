@@ -1,7 +1,7 @@
 import React from 'react';
 import { useGlobalCountries } from '../Utils/context';
 import { newPopulation } from '../Utils/formula';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {BsArrowLeft} from "react-icons/bs";
 
 const CountryInfo = (info) => {
@@ -15,9 +15,6 @@ const CountryInfo = (info) => {
     <div className={`countries ${isDarkMode && "darkmode"}`}>
       <div className={`container container-country ${isDarkMode && "darkmode details-mode"}`}>
         <div className="link-container">
-          {/* <button onClick={() => navigate("/")} className={`back ${isDarkMode ? "dark-bg" : "white-bg"}`}>
-            <BsArrowLeft className={`arrow-left`} /> <span>Back</span>
-          </button> */}
           <Link to='/' className={`back ${isDarkMode ? "dark-bg" : "white-bg"}`}>
             <BsArrowLeft className={`arrow-left`} /> <span>Back</span>
           </Link>
