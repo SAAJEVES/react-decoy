@@ -72,3 +72,9 @@ npm install gh-pages --save-dev
 
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
+
+
+@testing-library/jest-dom
+@testing-library/react
+@testing-library/user-event
+web-vitals
